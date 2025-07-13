@@ -1,8 +1,11 @@
+//D:\twiddle-clone\Twiddle-course\twiddle-app\app\(root)\layout.tsx
+
 import { Inter } from 'next/font/google'
 import { Metadata } from 'next'
-import { ClerkProvider } from '@clerk/nextjs'
 
 import '../globals.css'
+import { ClerkProvider } from '@clerk/nextjs'
+
 import { currentUser } from '@clerk/nextjs/server'
 import TopBar from '@/components/shared/TopBar'
 import LeftSideBar from '@/components/shared/LeftSideBar'
@@ -17,7 +20,6 @@ export const metadata: Metadata = {
 const inter = Inter({
     subsets: ['latin']
 })
-
 export default async function RootLayout({ children }: 
     Readonly<{
         children: React.ReactNode
